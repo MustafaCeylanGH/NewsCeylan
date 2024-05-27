@@ -1,3 +1,50 @@
+# NewsCeylan Project
+
+A web application for fetching and displaying news articles using an external API.
+
+## Demo Video
+
+Watch the demo video to see the project in action:
+
+[![Project Demo](https://img.youtube.com/vi/cD7guEByOLo/0.jpg)](https://www.youtube.com/watch?v=cD7guEByOLo)
+
+## Overview
+
+This project is designed to demonstrate my skills and capabilities in web development. It fetches and displays news articles from various sources using an external API. Users can search for specific topics or browse news by category.
+
+## Why No Live Link?
+
+Due to API restrictions, the project could not be hosted on platforms like Netlify or Vercel. These platforms returned an HTTP 426 error, indicating that the API does not permit requests from these hosting services. To ensure you can see the project in action, I have provided a demo video above.
+
+## Features
+
+- Fetch news articles based on search queries or categories
+- Display headlines, article summaries, and images
+- Responsive design for mobile and desktop
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository
+
+   ```sh
+   git clone https://github.com/MustafaCeylanGH/NewsCeylan.git
+
+   ```
+
+2. Navigate to the project directory
+   cd NewsCeylan
+
+3. Install dependencies
+   npm install
+
+4. Create a .env file in the root directory and add your API key
+   REACT_APP_API_KEY=your_api_key_here
+
+5. Start the development server
+   npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
