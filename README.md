@@ -35,30 +35,30 @@ To run the project locally, follow these steps:
 
 2. Navigate to the project directory
 
-   ````sh
-   cd NewsCeylan```
+   ```sh
+   cd NewsCeylan
 
-   ````
+   ```
 
 3. Install dependencies
 
-   ````sh
-   npm install```
+   ```sh
+   npm install
 
-   ````
+   ```
 
 4. Create a .env file in the root directory and add your API key
 
-   ````sh
-   REACT_APP_API_KEY=your_api_key_here```
+   ```sh
+   REACT_APP_API_KEY=your_api_key_here
 
-   ````
+   ```
 
 5. Start the development server
 
-   ````sh
-   npm start```
-   ````
+   ```sh
+   npm start
+   ```
 
 # Getting Started with Create React App
 
