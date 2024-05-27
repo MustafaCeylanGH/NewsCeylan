@@ -1,0 +1,158 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+-------------------------------------------------------------------------------
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+.searchResults {
+  padding: 0 16rem;
+  margin-bottom: 9.6rem;
+}
+
+.searchResultsContainer {
+  margin-bottom: 6.4rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.pagination button {
+  background-color: #f5f5f5;
+  border: none;
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.pagination button:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+.pagination span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 0.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pagination button:disabled {
+  color: #757575;
+}
+
+.pagination button:disabled:hover {
+  background-color: #f5f5f5;
+  color: #757575;
+}
+
+.searchContainer {
+  padding: 1.6rem 0rem;
+  margin-bottom: 4.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  height: 5.2rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.icon-search {
+  font-size: 5.2rem;
+  padding: 1.2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.icon-close {
+  font-size: 3rem;
+  margin-left: -4.8rem;
+  margin-right: 0.8rem;
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  .searchResults {
+    padding: 0 12.8rem;
+  }
+
+  .icon-search {
+    font-size: 5.2rem;
+    padding: 1.2rem;
+    color: #fff;
+    background-color: #000;
+  }
+
+  .icon-close {
+    font-size: 3rem;
+    margin-left: -4.8rem;
+    margin-right: 0.8rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .searchResults {
+    padding: 0 9.6rem;
+  }
+}
+/* BELOW 720px (Smaller tablets) */
+@media (max-width: 45em) {
+  .searchResults {
+    padding: 0 6.4rem;
+  }
+
+  .searchInput {
+    height: 3.2rem;
+  }
+
+  .icon-search {
+    font-size: 3.2rem;
+    padding: 0.8rem;
+  }
+
+  .icon-close {
+    font-size: 2.4rem;
+  }
+}
+
+/* BELOW 560px (Phones) */
+@media (max-width: 35em) {
+  .searchResults {
+    padding: 0 3.2rem;
+  }
+  .searchInput {
+    height: 3.2rem;
+  }
+
+  .icon-search {
+    font-size: 3.2rem;
+    padding: 0.8rem;
+  }
+
+  .icon-close {
+    font-size: 2.4rem;
+  }
+
+  .pagination button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+  .pagination span {
+    font-size: 1.8rem;
+  }
+}

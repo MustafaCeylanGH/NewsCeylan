@@ -1,0 +1,557 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+-------------------------------------------------------------------------------
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.card a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card:hover .cardTitle {
+  text-decoration: underline;
+}
+
+.card .cardImage {
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.card:hover .cardImage {
+  opacity: 0.8;
+}
+
+.card .cardTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.card .cardDescription {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.card .cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.card .cardDate {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.card .cardSource {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.card .cardSource::before {
+  content: "|";
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .card .cardImage {
+    max-height: 200px;
+  }
+  .card .cardTitle {
+    font-size: 1.8rem;
+  }
+
+  .card .cardDescription {
+    font-size: 1.4rem;
+  }
+
+  .card .cardDate {
+    font-size: 1.2rem;
+  }
+
+  .card .cardSource {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .card .cardSource::before {
+    content: "|";
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+/* BELOW 720px (Smaller tablets) */
+@media (max-width: 45em) {
+  .card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .card .cardImage {
+    max-height: 200px;
+  }
+}
+
+/* BELOW 560px (Phones) */
+@media (max-width: 35em) {
+  .card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .card .cardImage {
+    max-height: 200px;
+  }
+}
+
+/********************************************************/
+/* Middle Column */
+
+.middleColumnCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.middleColumnCard a {
+  color: #000;
+  text-decoration: none;
+}
+
+.middleColumnCard:hover .cardTitle {
+  text-decoration: underline;
+}
+
+.middleColumnCard .cardImage {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.middleColumnCard:hover .cardImage {
+  opacity: 0.8;
+}
+
+.middleColumnCard .cardTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.middleColumnCard .cardDescription {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.middleColumnCard .cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.middleColumnCard .cardDate {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.middleColumnCard .cardSource {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.middleColumnCard .cardSource::before {
+  content: "|";
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .middleColumnCard a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .middleColumnCard .cardImage {
+    max-height: 200px;
+  }
+  .middleColumnCard .cardTitle {
+    font-size: 2.4rem;
+  }
+
+  .middleColumnCard .cardDescription {
+    font-size: 1.4rem;
+  }
+
+  .middleColumnCard .cardDate {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource::before {
+    content: "|";
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+/* BELOW 720px (Smaller tablets) */
+@media (max-width: 45em) {
+  .middleColumnCard a {
+    margin-top: -2.4rem;
+  }
+
+  .middleColumnCard .cardImage {
+    max-height: 200px;
+  }
+  .middleColumnCard .cardTitle {
+    font-size: 2.4rem;
+  }
+
+  .middleColumnCard .cardDescription {
+    font-size: 1.4rem;
+  }
+
+  .middleColumnCard .cardDate {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource::before {
+    content: "|";
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .middleColumnCard .cardMeta {
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* BELOW 560px (Phones) */
+@media (max-width: 35em) {
+  .middleColumnCard a {
+    margin-top: -2.4rem;
+  }
+
+  .middleColumnCard .cardImage {
+    max-height: 200px;
+  }
+  .middleColumnCard .cardTitle {
+    font-size: 2.4rem;
+  }
+
+  .middleColumnCard .cardDescription {
+    font-size: 1.4rem;
+  }
+
+  .middleColumnCard .cardDate {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource {
+    font-size: 1.2rem;
+  }
+
+  .middleColumnCard .cardSource::before {
+    content: "|";
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .middleColumnCard .cardMeta {
+    margin-bottom: 0.6rem;
+  }
+}
+
+/********************************************************/
+/* Upper Right Column */
+
+.isUpperLeftColumn a {
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2.4rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.isUpperLeftColumn:hover .cardTitle {
+  text-decoration: underline;
+}
+
+.isUpperLeftColumn .cardImage {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+}
+
+.isUpperLeftColumn:hover .cardImage {
+  opacity: 0.8;
+}
+
+.isUpperLeftColumn .cardTitle {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.isUpperLeftColumn .cardDescription {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.isUpperLeftColumn .cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.2rem 0;
+}
+
+.isUpperLeftColumn .cardDate {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.isUpperLeftColumn .cardSource {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.isUpperLeftColumn .cardSource::before {
+  content: "|";
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  .isUpperLeftColumn .cardImage {
+    max-height: 200px;
+  }
+
+  .isUpperLeftColumn .cardTitle {
+    font-size: 2rem;
+  }
+
+  .isUpperLeftColumn .cardDescription {
+    font-size: 1.4rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .isUpperLeftColumn .cardImage {
+    max-height: 150px;
+  }
+
+  .isUpperLeftColumn .cardTitle {
+    font-size: 1.8rem;
+  }
+
+  .isUpperLeftColumn .cardDescription {
+    font-size: 1.4rem;
+  }
+}
+/* BELOW 720px (Smaller tablets) */
+@media (max-width: 45em) {
+  .isUpperLeftColumn a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.2rem;
+  }
+
+  .isUpperLeftColumn .cardImage {
+    max-height: 200px;
+  }
+
+  .isUpperLeftColumn .cardTitle {
+    font-size: 1.8rem;
+  }
+
+  .isUpperLeftColumn .cardDescription {
+    font-size: 1.4rem;
+  }
+
+  .isUpperLeftColumn .cardDate {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .isUpperLeftColumn .cardSource {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .isUpperLeftColumn .cardSource::before {
+    content: "|";
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+/* BELOW 560px (Phones) */
+@media (max-width: 35em) {
+  .isUpperLeftColumn .cardImage {
+    max-height: 200px;
+  }
+
+  .isUpperLeftColumn .cardTitle {
+    font-size: 1.6rem;
+  }
+
+  .isUpperLeftColumn .cardDescription {
+    font-size: 1.2rem;
+  }
+}
+
+/********************************************************/
+/* SearchPage */
+
+.isSearchPage a {
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12.8rem;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 3.2rem;
+}
+
+.isSearchPage:hover .cardTitle {
+  text-decoration: underline;
+}
+
+.isSearchPage .cardImage {
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.isSearchPage:hover .cardImage {
+  opacity: 0.8;
+}
+
+.isSearchPage .cardTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.isSearchPage .cardDescription {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.isSearchPage .cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  margin-bottom: 1.6rem;
+}
+
+.isSearchPage .cardDate {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.isSearchPage .cardSource {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.isSearchPage .cardSource::before {
+  content: "|";
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  .isSearchPage a {
+    gap: 6.4rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .isSearchPage a {
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+  }
+
+  .isSearchPage .cardMeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
