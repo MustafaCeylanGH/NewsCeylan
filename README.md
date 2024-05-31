@@ -6,7 +6,7 @@ A web application for fetching and displaying news articles using an external AP
 
 Watch the demo video to see the project in action:
 
-[![Project Demo](https://img.youtube.com/vi/cD7guEByOLo/0.jpg)](https://www.youtube.com/watch?v=cD7guEByOLo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cD7guEByOLo" frameborder="0" allowfullscreen></iframe>
 
 ## Overview
 
